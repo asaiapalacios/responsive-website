@@ -1,20 +1,26 @@
+/* Make sure padding & border will not add on top of any width or height set on an element, but be included in the element's total width and height */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/* Reset a CSS default: cancel out any margin baked in the browser, b/c it adds spacing to top & bottom of certain elements (body, html, h, p, list, etc.) */
 * {
   margin: 0;
 }
 
+/* Remove the default underline from links */
 a {
   text-decoration: none;
 }
 
+/* Make sure images, pictures, and svgs are block elements and do not overflow their containers */
 img,
 picture,
 svg {
   max-width: 100%;
   display: block;
 }
+
+/* Set the default font family and size for the entire page */
